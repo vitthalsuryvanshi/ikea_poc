@@ -59,7 +59,7 @@ function getCustomer(){
 
 app.get('/', async (req, res, next) => {
   // Create a customer record to be stored in the database
-  const visit = {
+  const customer = {
     timestamp: new Date(),
     // Store a hash of the visitor's ip address
     userIp: crypto
