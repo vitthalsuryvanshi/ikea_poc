@@ -39,7 +39,7 @@ const datastore = new Datastore();
  */
 function insertCustomer(customer) {
   return datastore.save({
-    key: datastore.key('customer'),
+    key: datastore.key('Customer'),
     data: customer,
   });
 }
@@ -51,7 +51,7 @@ function insertCustomer(customer) {
 */
 function getCustomer(){
   const query = datastore
-      .createQuery('customer')
+      .createQuery('Customer')
       .order('timestamp', {descending:true})
 
   return datastore.runQuery(query);

@@ -27,7 +27,7 @@
   "cloud-repo-tools": {
     "test": {
       "app": {
-        "msg": "Last 10 visits:"
+        "msg": "Last 10 customers:"
       }
     },
     "requiresKeyFile": true,
