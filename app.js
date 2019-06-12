@@ -17,7 +17,7 @@
 'use strict';
 
 const express = require('express');
-const crypto = require('crypto');
+/**const crypto = require('crypto'); */
 
 const app = express();
 app.enable('trust proxy');
@@ -56,6 +56,20 @@ function getCustomer(){
 
   return datastore.runQuery(query);
 }
+
+/**
+* Retrive the customer records
+*
+* @param {object} customer The customer
+*/
+function getCustomer(custid){
+  const query = datastore
+      .createQuery('Customer')
+      .order('timestamp', {descending:true})
+
+  return datastore.runQuery(query);
+}
+
 
 app.get('/', async (req, res, next) => {
   // Create a customer record to be stored in the database

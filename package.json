@@ -7,7 +7,7 @@
   "author": "Sogeti",
   "repository": {
     "type": "git",
-    "url": "https://github.com/vitthalsuryvanshi/ikea_poc.git"
+    "url": "https://github.com/vitthalsuryvanshi/nodejsgcp_poc.git"
   },
   "engines": {
     "node": ">=8.0.0"
